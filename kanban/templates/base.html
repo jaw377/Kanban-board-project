@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <ul class="nav bg-info">
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/board">HOME</a>
+          <a class="nav-link link-light" href="/admin">Admin page</a>
+          </li>
+      {% block menubar %}
+      
+        
+      {% endblock %}
+      </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+
+</html>
