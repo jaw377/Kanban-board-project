@@ -10,20 +10,23 @@
 
 <body>
   <main>
-    <div class="container">
+    <div class="container-fluid">
       <ul class="nav bg-info">
         <li class="nav-item">
           <a class="nav-link link-light" href="/board">HOME</a>
-          <a class="nav-link link-light" href="/admin">Admin page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="/admin">Admin page</a>
           </li>
       {% block menubar %}
       
         
       {% endblock %}
       </ul>
+    
+      {% block content %}
+      {% endblock %}
     </div>
-    {% block content %}
-    {% endblock %}
   </main>
 </body>
 
