@@ -29,5 +29,6 @@ jobs:
    steps:
    
     - name: Run Tests
+      working-directory: kanban
       run: |
         python manage.py test
