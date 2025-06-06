@@ -33,6 +33,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
+          python -m pip install Django
         working-directory: ./kanban
       - name: Run Django Tests
         run: python manage.py test
