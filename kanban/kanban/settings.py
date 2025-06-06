@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'board',
     'bootstrap5',
+    'login_history',
 ]
 
 MIDDLEWARE = [

@@ -35,6 +35,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install Django
           pip install django-bootstrap-v5
+          pip install dj_user_login_history
         working-directory: ./kanban
       - name: Run Django Tests
         run: python manage.py test
