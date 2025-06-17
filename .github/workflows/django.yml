@@ -38,5 +38,7 @@ jobs:
           pip install dj_user_login_history
         working-directory: ./kanban
       - name: Run Django Tests
-        run: python manage.py test
+        run: |
+          pytest -q test_signin.py
+          python manage.py test
         working-directory: ./kanban
