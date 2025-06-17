@@ -41,6 +41,6 @@ jobs:
         working-directory: ./kanban
       - name: Run Django Tests
         run: |
-          pytest -v test_sigin.py
+          pytest -v test_signin.py
           python manage.py test
         working-directory: ./kanban
