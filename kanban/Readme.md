@@ -21,8 +21,10 @@ Current process is currently slow and inefficient, and requires constant alterat
 - Bootstrap add on for CSS and HTML on VS code app
 - Django python on VS code app
 # How to run the environment 
+- It should automatically take it into the parent folder "kanban" if so then cd kanban again to be able to run environment
+- cd kanban 
 - use command "python manage.py runserver" in terminal when in the correct file location
-- Enter "localhost" in internet url
+- Enter "localhost" in internet url "http://localhost:8000/"
 # Security measures added (Level 6)
 - Admin user can access admin page 
 - Admin user can view the logging in and logging out history
